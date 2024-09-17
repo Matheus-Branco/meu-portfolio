@@ -1,17 +1,13 @@
+import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
-  `,
-  styles: [],
+  imports: [NgClass],
+  templateUrl: "app.component.html",
+  styleUrl: "app.component.scss"
 })
 export class AppComponent {
-  title = 'meu-portfolio';
+  public colapsarNavbar: boolean = false
 }

@@ -1,0 +1,83 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container py-2">
+        <a href="#" class="navbar-brand fw-semibold">Matheus Jeremias</a>
+        <button
+        (click)="colapsarNavbar = ! colapsarNavbar"
+        class="navbar-toggler"
+        type="button"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" [ngClass]="{show: colapsarNavbar}">
+            <div class="navbar-nav ms-auto">
+                <a href="#" class="nav-link active" aria-current="page">Início</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="mt-5" id="sobre">
+    <div class="container">
+        <div class="d-flex">
+            <img
+            class="img-cluid rounded-pill"
+            src="/foto-Matheus.jpg"
+            alt="Foto de Matheus Jeremias"/>
+        </div>
+        <h2 class="display-5 fw-bold text-center mt-5">Um pouco sobre mim</h2>
+        
+        <div class="row flex-wrap mt-5">
+            <div class="col-lg">
+                <h3 class="fs-3">
+                    Meu nome é Matheus Jeremias, sou um desenvolvedor Full-Stack
+                </h3>
+
+                <p class="fs-5 mt-3">
+                    Tenho 2 anos de experiência como desenvolvedor Full-Stack. Desenvolvi vários projetos robustos com diferentes regras de negócio, utilizando a 
+                    <span class="app-texto-principal fw-semibold">Plataforma .NET</span>e 
+                    <span class="app-texto-principal fw-semibold">Angular</span>.
+                </p>
+
+                <p class="fs-5">
+                    Hoje sou estudante na Academia do Programador, uma empresa focada no ensino e direcionamento de desenvolvedor para o Mercado de Trabalho.
+                </p>
+            </div>
+
+            <div class="col">
+                <ul class="list-group">
+                    <li class="list-group-item py-3">
+                        <strong>Nome: </strong>Matheus Jeremias Branco
+                    </li>
+                    <li class="list-group-item py-3">
+                        <strong>Email: </strong>
+                        <a href="mailto:jeremiasmatheus007&#64;gmail.com"></a>
+                    </li>
+                    <li class="list-group-item py-3">
+                        <strong>Idade: </strong>20 anos
+                    </li>
+                    <li class="list-group-item py-3">
+                        <strong>De: </strong> Lages, Santa Catarina
+                    </li>
+                </ul>
+
+                <div class="d-flex justify-content-center align-items-center gap-3 mt-3">
+                    <a class="text-light" href="https://github.com/Matheus-Branco">
+                        <i class="bi bi-github fs-2"></i>
+                    </a>
+                    <a class="text-light" href="https://www.linkedin.com/in/matheus-jeremias-branco-87069a1ba/">
+                        <i class="bi bi-linkedin fs-1"></i>
+                    </a>
+
+                    <a href="https://api.whatsapp.com/send?phone=5549991663534&text&type=phone_number&app_absent=0"
+                    target="_blank"
+                    class="btn btn-lg btn-warning rounded-5 px-5 fw-semibold"
+                    >
+                    Contato via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
