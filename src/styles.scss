@@ -13,6 +13,16 @@ $cor-background-2: #242527;
     color: $cor-principal;
 }
 
+.app-background-principal{
+    background-color: $cor-principal;
+}
+
+.app-hover-secundario{
+    &:hover{
+        background-color: $cor-secundaria;
+    }
+}
+
 .app-background-secundario{
     background-color: $cor-secundaria;
 }
@@ -23,4 +33,20 @@ $cor-background-2: #242527;
 
 .app-background-escuro-2{
     background-color: $cor-background-2;
+}
+
+#portfolio{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+section{
+    min-height: 100vh;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+:root{
+    font-size: 16px;
 }

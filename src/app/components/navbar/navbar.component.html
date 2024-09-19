@@ -1,0 +1,19 @@
+<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary"></nav>
+    <div class="container py-2">
+        <a href="#" class="navbar-brand fw-semibold">Matheus Jeremias</a>
+        <button
+        (click)="colapsarNavbar = ! colapsarNavbar"
+        class="navbar-toggler"
+        type="button"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" [ngClass]="{show: colapsarNavbar}">
+            <div class="navbar-nav ms-auto">
+                <a href="#" class="nav-link active" aria-current="page">Início</a>
+            </div>
+        </div>
+    </div>
+</nav>
